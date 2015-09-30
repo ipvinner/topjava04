@@ -28,6 +28,10 @@ public class UserMeal extends BaseEntity {
         this.calories = calories;
     }
 
+    public UserMeal(UserMeal userMeal){
+        this(userMeal.getId(), userMeal.getDateTime(), userMeal.getDescription(), userMeal.getCalories());
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -38,6 +42,10 @@ public class UserMeal extends BaseEntity {
 
     public String getDescription() {
         return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public int getCalories() {
@@ -51,6 +59,8 @@ public class UserMeal extends BaseEntity {
     public boolean isNew() {
         return id == null;
     }
+    
+    
 
     @Override
     public String toString() {
@@ -61,4 +71,6 @@ public class UserMeal extends BaseEntity {
                 ", calories=" + calories +
                 '}';
     }
+
+    
 }
