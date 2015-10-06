@@ -3,6 +3,7 @@ package ru.javawebinar.topjava.model;
 import ru.javawebinar.topjava.LoggerWrapper;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * User: gkislin
