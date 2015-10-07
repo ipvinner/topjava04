@@ -51,7 +51,8 @@ public class JpaUserMealRepositoryImpl implements UserMealRepository {
 
     @Override
     public UserMeal get(int id, int userId) {
-        return em.find(UserMeal.class, id);
+        return em.createNamedQuery(UserMeal.GET, UserMeal.class).setParameter("id", id).setParameter("userId", userId).getSingleResult();
+//        return em.find(UserMeal.class, id);
     }
 
     @Override
