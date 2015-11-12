@@ -152,15 +152,8 @@
             ]
         });
         makeEditable();
-        init();
     });
 
-    function init(){
-        $(':checkbox').each(function () {
-            if (!$(this).is(":checked")) {
-                $(this).closest('tr').css("text-decoration", "line-through");
-            }
-        });
-    }
+
 </script>
 </html>
