@@ -5,7 +5,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <a href="meals">
-            <div class="navbar-header navbar-brand"><fmt:message key="app.title"/></div>
+            <div class="navbar-header navbar-brand">new Change</div>
         </a>
 
         <div class="collapse navbar-collapse">
